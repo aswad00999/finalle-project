@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
     <header>
         <div class="container">
-            <div class="logo">Brook Shoes</div>
+            <div class="logo">StepUp</div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -34,19 +31,54 @@
             <div class="filter-options">
                 <select id="category-filter">
                     <option value="all">All Categories</option>
-                    <option value="Men">Men</option>
-                    <option value="Women">Women</option>
-                    <option value="Kids">Kids</option>
+                    <option value="running">Running</option>
+                    <option value="casual">Casual</option>
+                    <option value="formal">Formal</option>
                 </select>
                 <select id="price-filter">
                     <option value="all">All Prices</option>
-                    <option value="0-2000">0 - 2000 Rs</option>
-                    <option value="2000-3000">2000 - 3000 Rs</option>
-                    <option value="3000-5000">3000 - 5000 Rs</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100-150">$100 - $150</option>
                 </select>
             </div>
             <div class="products-grid">
-
+                <div class="product-card" data-category="running" data-price="89.99">
+                    <img src="images/shoe1.jpg" alt="Running Shoe">
+                    <h3>Velocity Runner</h3>
+                    <p>$89.99</p>
+                    <button class="add-to-cart" data-id="1">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="casual" data-price="79.99">
+                    <img src="images/shoe2.jpg" alt="Casual Shoe">
+                    <h3>Urban Walker</h3>
+                    <p>$79.99</p>
+                    <button class="add-to-cart" data-id="2">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="formal" data-price="129.99">
+                    <img src="images/shoe3.jpg" alt="Formal Shoe">
+                    <h3>Executive Class</h3>
+                    <p>$129.99</p>
+                    <button class="add-to-cart" data-id="3">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="running" data-price="95.99">
+                    <img src="images/shoe4.jpg" alt="Trail Runner">
+                    <h3>Trail Blazer</h3>
+                    <p>$95.99</p>
+                    <button class="add-to-cart" data-id="4">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="casual" data-price="65.99">
+                    <img src="images/shoe5.jpg" alt="Canvas Sneaker">
+                    <h3>Canvas Classic</h3>
+                    <p>$65.99</p>
+                    <button class="add-to-cart" data-id="5">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="formal" data-price="139.99">
+                    <img src="images/shoe6.jpg" alt="Oxford Shoe">
+                    <h3>Oxford Elite</h3>
+                    <p>$139.99</p>
+                    <button class="add-to-cart" data-id="6">Add to Cart</button>
+                </div>
             </div>
         </div>
     </section>
@@ -76,12 +108,11 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Brooks Footwear. All rights reserved.</p>
+                <p>&copy; 2023 StepUp Footwear. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
